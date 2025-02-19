@@ -1,0 +1,100 @@
+#footer{
+    color: var(--white);
+    gap: 50px;
+    border-top: 1px solid var(--white);
+}
+
+.caixa1ft{
+    display: flex;
+    align-items: start;
+    gap: 50px;
+}
+
+.caixaLeftFt{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 70%;
+}
+
+.caixaInfoTitle2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    border-left: 1px solid var(--color1);
+    padding-left: 20px;
+}
+
+.caixaInfoTitle2 h1{
+    font-family: var(--font-destaque);
+    font-size: 2em;
+}
+
+.caixaBtnsRodape{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.caixaBtnsRodape a{
+    color: var(--white);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.caixaBtnsRodape a:hover{
+    color: var(--color1);
+}
+
+.caixa2ft{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sociaisFt{
+    display: flex;
+    gap: 10px;
+}
+
+.sociaisFt a{
+    color: var(--white);
+}
+
+.caixa2ft i{
+    font-size: 1.8em;
+}
+
+.caixa2ft i:hover{
+    color: var(--color1);
+}
+
+@media (max-width: 750px) {
+    .caixa1ft{
+        flex-direction: column;
+    }
+    .caixaLeftFt{
+        width: 100%;
+    }
+    .caixaInfoTitle2 h1{
+        font-size: 1.8em;
+    }
+    .caixaInfoTitle2 p{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 450px) {
+    .caixa2ft{
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 10px;
+    }
+    .caixa2ft p{
+        font-size: .8em;
+    }
+    .caixa2ft i{
+        font-size: 1.6em;
+    }
+}

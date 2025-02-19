@@ -1,0 +1,149 @@
+header {
+    width: 100vw;
+    height: 10vh;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: transparent;
+    z-index: 30;
+}
+
+header.scrolled {
+    background-color: var(--black);
+    
+    box-shadow: 5px 5px 10px -2px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 5px 5px 10px -2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 5px 5px 10px -2px rgba(0,0,0,0.6);
+}
+
+.logo {
+    font-family: var(--font-logo);
+    font-size: 2.2em;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 40px;
+    margin: 0 2px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links ul a {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--white);    
+}
+
+.nav-links ul a:hover{
+    color: var(--color1);
+}
+
+.hamburger-menu {
+    font-size: 1.6em;
+    color: var(--white);
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu:hover{
+    color: var(--color1);
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 3px 0;
+}
+
+.close-btn {
+    color: var(--white);
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 27px;
+    margin-right: 5%;
+    font-size: 1.6em;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.close-btn:hover{
+    color: var(--color1);
+}
+
+@media screen and (max-width: 999px) {
+    .logo {
+        font-size: 2em;
+    }
+    
+    .logo img{
+        height: 33px;
+    }
+    .nav-links ul a {
+        font-size: 1.1em;    
+    }    
+}
+
+@media screen and (max-width: 750px) {
+    .nav-links {
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        background-color: #111111ec;
+        backdrop-filter: blur(20px);
+    }
+
+    .logo {
+        font-size: 1.8em;
+    }
+    
+    .logo img{
+        height: 30px;
+    }
+
+    .close-btn {
+        display: block;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links ul a {
+        font-size: 2em;
+        font-weight: 900;
+        color: var(--white);    
+    }
+    
+}

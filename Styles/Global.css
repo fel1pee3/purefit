@@ -1,0 +1,54 @@
+:root{
+    --color1: #84CC16;
+    --color2: #1E3A8A;
+    --color3: #3B82F6;
+    --white: #f7f7f7;
+    --black: #111111;
+
+    --font-global: "Quicksand", sans-serif;
+    --font-logo: "Anton", sans-serif;
+    --font-titulos: "Poppins", sans-serif;
+    --font-destaque: "Rubik", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-global);
+    box-sizing: border-box;
+    transition: all ease .4s;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;          
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--black);       
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color1);
+    border: 2px solid var(--black);
+}
+
+#main{
+    width: 100vw;
+    background-color: var(--black);
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    border: none;
+}

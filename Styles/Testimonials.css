@@ -1,0 +1,8 @@
+#testimonials{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+#testimonials .traco{
+    background-color: var(--black);
+}

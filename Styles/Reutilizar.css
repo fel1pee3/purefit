@@ -1,0 +1,84 @@
+section, footer{
+    color: var(--white);
+    width: 100%;
+    padding: 100px 5% 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.caixaInfoTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.caixaSecTitle{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.caixaTracos{
+    margin-left: 5px;
+    display: flex;
+    gap: 8px;
+}
+
+.traco{
+    height: 50px;
+    width: 1.5px;
+    transform: rotate(15deg);
+    background-color: var(--white);
+}
+
+.t1{
+    opacity: 100%;
+}
+.t2{
+    opacity: 75%;
+}
+.t3{
+    opacity: 50%;
+}
+.t4{
+    opacity: 25%;
+}
+
+.caixaInfoTitle h1{
+    font-family: var(--font-titulos);
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.caixaInfoTitle p{
+    width: 60%;
+    opacity: 90%;
+}
+
+@media (max-width: 750px){
+    
+    .traco{
+        height: 45px;
+    }
+    
+    .caixaInfoTitle h1{
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 450px){
+    
+    .traco{
+        height: 35px;
+    }
+    
+    .caixaInfoTitle h1{
+        font-size: 1.4em;
+    }
+    
+    .caixaInfoTitle p{
+        width: 100%;
+        font-size: .9em;
+    }
+}

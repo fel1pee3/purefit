@@ -1,0 +1,112 @@
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(37, 37, 37, 0.014)),url('../images/fundo-home.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.caixaTxt{
+    color: white;
+    width: 80%;
+}
+
+.caixaTxt h2{
+    font-family: var(--font-destaque);
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.caixaTxt h1{
+    font-family: var(--font-destaque);
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.caixaTxt h1 span{
+    font-family: var(--font-destaque);
+    text-decoration: line-through;
+    text-decoration-color: var(--color1);
+    text-decoration-thickness: 10px;
+}
+
+.fa-globe{
+    margin: 0 5px;
+    color: var(--color1);
+}
+
+.btn{
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid var(--color1);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.btn:hover{
+    color: var(--black);
+    background-color: var(--color1);
+    box-shadow: 0px 0px 7px 1px var(--color1);
+}
+
+@media (max-width: 999px) {
+    .caixaTxt h2{
+        font-size: 1.8em;
+    }
+
+    .caixaTxt h1{
+        font-size: 3em;
+    }
+
+    .caixaTxt h1 span{
+        text-decoration-thickness: 9px;
+    }
+}
+
+@media (max-width: 750px) {
+    .caixaTxt{
+        width: 100%;
+    }
+
+    .caixaTxt h2{
+        font-size: 1.6em;
+    }
+
+    .caixaTxt h1{
+        font-size: 2.5em;
+    }
+
+    .caixaTxt h1 span{
+        text-decoration-thickness: 8px;
+    }
+
+    .btn{
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 450px) {
+    .caixaTxt h2{
+        font-size: 1em;
+    }
+
+    .caixaTxt h1{
+        font-size: 1.8em;
+    }
+
+    .caixaTxt h1 span{
+        text-decoration-thickness: 7px;
+    }
+    .btn{
+        padding: 8px 16px;
+    }
+}

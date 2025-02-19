@@ -1,0 +1,47 @@
+#community{
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.caixaImgsCmt{
+    display: flex;
+}
+
+.caixaImgsCmt img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: -30px; /* Ajusta a sobreposição */
+    border: 10px solid var(--black);
+}
+
+@media (max-width: 999px) {
+    #community{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .caixaImgsCmt{
+        margin-left: 30px;
+    }
+    
+    .caixaImgsCmt img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 750px) { 
+    .caixaImgsCmt img{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 450px) { 
+    .caixaImgsCmt img{
+        width: 100px;
+        height: 100px;
+    }
+}

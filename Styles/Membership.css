@@ -1,0 +1,97 @@
+.caixaMembrosValores{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+    gap: 40px;
+}
+
+.txtRecomendado{
+    padding: 5px 10px;
+    background-color: var(--color1);
+    color: var(--black);
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.caixaValor{
+    background-color: rgb(98, 41, 255);
+}
+
+.caixaMaior{
+    background-image: url(../images/fundo-planos.jpg);
+    background-size: cover;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.caixaMaior h1{
+    font-family: var(--font-titulos);
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--color1);
+}
+
+.caixaMenor{
+    background-color: var(--white);
+    color: var(--black);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixaPreco{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.caixaPreco h3{
+    font-size: 1em;
+}
+
+.caixaMenor p{
+    font-weight: 600;
+}
+
+.caixaMenor a{
+    border:  2px solid var(--black);
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.caixaMenor a:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.c2{
+    border: 2px solid var(--color1);
+}
+
+.c2 .caixaMaior h1{
+    color: var(--white);
+}
+
+.c2 .caixaMenor{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.c2 .caixaMenor a{
+    border: 2px solid var(--color1);
+    color: var(--color1);
+}
+
+.c2 .caixaMenor a:hover{
+    background-color: var(--color1);
+    color: var(--black);
+}

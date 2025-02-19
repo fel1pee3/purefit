@@ -1,0 +1,86 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel2 {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.comment {
+    min-width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comentario{
+    text-align: left;
+    font-family: var(--font-destaque);
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.caixaPerfil{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.caixaPerfil img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.caixaPerfil .nome{
+    font-weight: 700;
+}
+
+.tc2{
+    background-color: var(--color1);
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+button {
+    background-color: transparent;
+    color: var(--color1);
+    font-size: 1.8em;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00000010;
+}
+
+#counter {
+    font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    .comment {
+        min-width: 100%;
+    }
+
+    .comentario{
+        font-size: 1.4em;
+    }
+}

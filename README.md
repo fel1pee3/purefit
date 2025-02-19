@@ -34,3 +34,8 @@ PureFit/
    git clone https://github.com/fel1pee3/purefit.git
    ```
 2. Abra o arquivo `index.html` no navegador.
+
+##Link do site
+```sh
+   https://fel1pee3.github.io/purefit/
+   ```
